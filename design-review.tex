@@ -1,0 +1,163 @@
+\documentclass[10pt, compress]{beamer}
+
+\usetheme{m}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\title{QuARC}
+\subtitle{Qualcomm Articulated Robot Control}
+\date{\today}
+\author{Hershal Bhave, Eric Crosson, Dhaval Ganatra, Johnathan Kyle, William
+  ``Stormy'' Mauldin}
+\institute{University of Texas}
+
+\begin{document}
+
+\maketitle
+
+\section{Project Definition}
+
+\begin{frame}[fragile]
+  \frametitle{Overview of Design Problem}
+
+  \begin{itemize}
+  \item Control an articulated robot arm with a Snapdragon processor
+  \item Efficiency of power and cost
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Design Objectives: Requirements}
+  \begin{itemize}
+    \item Snapdragon 600 Processor
+    \item Cortex M4 Micro-controller for PWM
+    \item Inverse Kinematics library
+      \begin{itemize}[label=$\circ$]
+        \item C++
+      \end{itemize}
+    \item Lynxmotion AL5D arm
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Deliverables}
+  \begin{itemize}
+    \item Prototype: Robotic arm and associated control software
+      \begin{itemize}[label=$\circ$]
+        \item IFC 6410
+          \begin{itemize}[label=$\diamond$]
+            \item IK Software Library (C++)
+            \item User interface (coordinate input)
+          \end{itemize}
+        \item TI TM4C
+          \begin{itemize}[label=$\circ$]
+            \item Generate PWM signals (C++)
+          \end{itemize}
+        \item Lynxmotion AL5D
+      \end{itemize}
+    \item Goal: Perform pick-and-place tasks
+      \begin{itemize}[label=$\circ$]
+        \item Minimal positional error
+        \item Minimal oscillations
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Design}
+
+\section{Status}
+
+\begin{frame}[fragile]
+  \frametitle{Accomplishments}
+  \begin{itemize}
+    \item Assembled arm
+    \item Achieved basic servo movement
+      \begin{itemize}[label=$\circ$]
+        \item Oscillation
+      \end{itemize}
+    \item Shifted to Github or version control
+      \begin{itemize}[label=$\circ$]
+        \item Implemented virtualized build system (Vagrant)
+        \item Wrote Pulse Width Calculator module
+      \end{itemize}
+    \item Found open-source IK libraries (BSD)
+      \begin{itemize}[label=$\circ$]
+        \item roboticslibrary.org
+        \item moveit.ros.org
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Upcoming Weeks}
+  \begin{itemize}
+    \item Connect hardware
+      \begin{itemize}[label=$\circ$]
+        \item IFC $\to$ TM4C $\to$ Op amps $\to$ AL5D
+      \end{itemize}
+    \item Implement and refine IK library
+    \item Incrementally test and evolve system
+      \begin{itemize}[label=$\circ$]
+        \item Determine practical angle ranges
+        \item Remove oscillation
+        \item Identify further issues
+        \item Create user interface
+        \item Develop use case
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Division of Work}
+  \begin{itemize}
+    \item Hershal, Eric: Architecture \& software
+      \begin{itemize}[label=$\circ$]
+        \item IK library architecture
+        \item User interface
+      \end{itemize}
+    \item Dhaval, Johnathan, Stormy: Power \& software
+      \begin{itemize}[label=$\circ$]
+        \item Hardware connections
+        \item TM4C PWM modules
+      \end{itemize}
+    \item All
+      \begin{itemize}[label=$\circ$]
+        \item Use case
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Conclusion}
+  \begin{itemize}
+    \item Goal: Efficiency in cost and power
+    \item Breakthroughs
+      \begin{itemize}[label=$\circ$]
+        \item TM4C
+        \item Open-source IK
+      \end{itemize}
+    \item Concerns
+      \begin{itemize}[label=$\circ$]
+        \item Molding open source IK library to our needs
+        \item Designing a balanced use case
+      \end{itemize}
+    \item Next steps
+      \begin{itemize}[label=$\circ$]
+        \item Design Implementation Plan (September 16)
+        \item Continue prototyping
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\plain{}{Questions?}
+
+\end{document}
