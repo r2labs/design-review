@@ -1,3 +1,16 @@
+# Design review
+
+## Building
+
+To build this project, follow normal cmake rules (outlined below).
+
+```sh
+git clone https://github.com/r2labs/design-review.git  # clone the repository
+cd design-review && mkdir build                        # make build dir
+cd build && cmake ..                                   # cmake in build dir
+make                                                   # make. docs are in doc-bin 
+```
+
 ## Beamer mtheme
 
 The *mtheme* is a Beamer theme with minimal visual. The core design principles
