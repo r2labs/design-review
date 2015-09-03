@@ -1,0 +1,6 @@
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/safepdf.dir
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/ps.dir
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/dvi.dir
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/pdf.dir
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/auxclean.dir
+/home/eric/workspace/design-review/build/doc-bin/CMakeFiles/html.dir

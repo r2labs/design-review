@@ -1,0 +1,19 @@
+\frametitle{Conclusion}
+  \begin{itemize}
+    \item Goal: Efficiency in cost and power
+    \item Breakthroughs
+      \begin{itemize}[label=$\circ$]
+        \item TM4C
+        \item Open-source IK
+      \end{itemize}
+    \item Concerns
+      \begin{itemize}[label=$\circ$]
+        \item Molding open source IK library to our needs
+        \item Designing a balanced use case
+      \end{itemize}
+    \item Next steps
+      \begin{itemize}[label=$\circ$]
+        \item Design Implementation Plan (September 16)
+        \item Continue prototyping
+      \end{itemize}
+  \end{itemize}
